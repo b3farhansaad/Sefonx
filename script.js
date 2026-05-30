@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Discord Webhook Integration
 async function sendToDiscord(name, email, subject, message) {
-    const webhookUrl = 'https://discord.com/api/webhooks/+971 50 123 4567/AcaXmvmEoUHKhEJ0ICBabf_In23befCTjj7ItAqE8aE-rlqFjGsSbOp3BdQA240m45G9';
+    const webhookUrl = 'https://discord.com/api/webhooks/1510318451892424844/PgGqcSw5WxhS9ThJV-d2n-x5IhzXw8gM5cNCUNyOzac4s_FBE4z-aQbHS6gSAXST8Wtx';
     
     // Create detailed embed
     const embed = {
@@ -380,11 +380,11 @@ async function sendToDiscord(name, email, subject, message) {
             }
         ],
         footer: {
-            text: "3LAWI Portfolio Contact Form",
-            icon_url: "https://3lawi.vercel.app/assests/website-logo.png"
+            text: "Sefonx Portfolio Contact Form",
+            icon_url: "https://sefonx.vercel.app/assests/website-logo.png"
         },
         thumbnail: {
-            url: "https://3lawi.vercel.app/assests/website-logo.png"
+            url: "https://sefonx.vercel.app/assests/website-logo.png"
         }
     };
     
@@ -396,8 +396,8 @@ async function sendToDiscord(name, email, subject, message) {
         },
         body: JSON.stringify({
             embeds: [embed],
-            username: "3LAWI Portfolio",
-            avatar_url: "https://3lawi.vercel.app/assests/website-logo.png"
+            username: "sefonx Portfolio",
+            avatar_url: "https://sefonx.vercel.app/assests/website-logo.png"
         })
     });
     
