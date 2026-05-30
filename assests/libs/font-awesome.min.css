@@ -1,0 +1,43 @@
+/* Font Awesome Free 6.4.0 - Inline SVG version for offline use */
+.fas, .fab, .far, .fa {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Use Unicode symbols as fallback icons */
+.fa-home::before { content: "⌂"; }
+.fa-user::before { content: "👤"; font-size: 0.85em; }
+.fa-code::before { content: "</>"; font-size: 0.7em; font-family: monospace; font-weight: bold; }
+.fa-briefcase::before { content: "💼"; font-size: 0.85em; }
+.fa-envelope::before { content: "✉"; }
+.fa-times::before { content: "✕"; }
+.fa-palette::before { content: ""; font-size: 0.85em; }
+.fa-cogs::before { content: "⚙"; }
+.fa-html5::before { content: "H"; font-weight: bold; color: #e34f26; }
+.fa-css3-alt::before { content: "C"; font-weight: bold; color: #1572b6; }
+.fa-js-square::before { content: "JS"; font-size: 0.7em; font-weight: bold; color: #f7df1e; }
+.fa-js::before { content: "JS"; font-size: 0.7em; font-weight: bold; }
+.fa-react::before { content: "⚛"; }
+.fa-rocket::before { content: ""; font-size: 0.85em; }
+.fa-wind::before { content: "≋"; font-weight: bold; }
+.fa-cube::before { content: "◈"; }
+.fa-node-js::before { content: "N"; font-weight: bold; color: #339933; }
+.fa-server::before { content: "▤"; }
+.fa-layer-group::before { content: "≡"; font-weight: bold; }
+.fa-leaf::before { content: "🍃"; font-size: 0.85em; }
+.fa-file-code::before { content: "📄"; font-size: 0.85em; }
+.fa-shield-alt::before { content: "🛡"; font-size: 0.85em; }
+.fa-python::before { content: "🐍"; font-size: 0.85em; }
+.fa-bullseye::before { content: "◎"; }
+.fa-map-marker-alt::before { content: "📍"; font-size: 0.85em; }
+.fa-phone::before { content: "📞"; font-size: 0.85em; }
+.fa-globe::before { content: "🌐"; font-size: 0.85em; }
+.fa-external-link-alt::before { content: "↗"; font-weight: bold; }
+.fa-check-circle::before { content: "✓"; }
+.fa-exclamation-circle::before { content: "⚠"; }
+.fa-info-circle::before { content: "ℹ"; }
+.fa-bars::before { content: "☰"; }
