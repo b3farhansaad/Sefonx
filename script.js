@@ -362,7 +362,7 @@ async function sendToDiscord(name, email, subject, message) {
             },
             {
                 name: "🌐 Website",
-                value: "3LAWI Portfolio",
+                value: "Sefonx Portfolio",
                 inline: true
             },
             {
