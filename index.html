@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sefonx | Full Stack Developer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="particles"></div>
+
+<nav>
+<div class="logo">SEFONX</div>
+<div class="links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="left">
+<h1>Sef<span>onx</span></h1>
+<h2>Full Stack Developer</h2>
+<p>18 Years Old • Saudi Arabia • 5+ Years Experience</p>
+<a class="btn" href="#projects">View Projects</a>
+</div>
+<div class="right">
+<img src="profile.jpg" alt="profile">
+</div>
+</section>
+
+<section id="about" class="glass">
+<h3>About Me</h3>
+<p>Passionate Full Stack Developer building modern websites, dashboards and automation systems.</p>
+</section>
+
+<section id="skills" class="glass">
+<h3>Skills</h3>
+<div class="tabs">
+<button onclick="showTab('front')">Frontend</button>
+<button onclick="showTab('back')">Backend</button>
+</div>
+<div id="front" class="grid">
+<div>HTML5</div><div>CSS3</div><div>JavaScript</div><div>React</div><div>Next.js</div><div>Tailwind</div>
+</div>
+<div id="back" class="grid" style="display:none">
+<div>Node.js</div><div>Express</div><div>Python</div><div>MongoDB</div><div>MySQL</div><div>API Development</div>
+</div>
+</section>
+
+<section id="projects" class="glass">
+<h3>Projects</h3>
+<div class="project">Discord Selfbot • 750+ Commands</div>
+</section>
+
+<script>
+function showTab(id){
+front.style.display='none';
+back.style.display='none';
+document.getElementById(id).style.display='grid';
+}
+</script>
+</body>
+</html>
