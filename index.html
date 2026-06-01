@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'><head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Sefonx Galaxy Edition</title>
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<div class="stars"></div>
+<div class="planet"></div>
+
+<header>
+<div class="logo">SEFONX</div>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#stats">Stats</a>
+</nav>
+</header>
+
+<section class="hero reveal">
+<div>
+<h1>Sef<span>onx</span></h1>
+<h2>Full Stack Developer</h2>
+<p>Saudi Arabia • 18 Years Old • 5+ Years Experience</p>
+<a class="btn">Explore Portfolio</a>
+</div>
+<div class="avatar"></div>
+</section>
+
+<section id="stats" class="panel reveal">
+<div class="grid4">
+<div class="card"><h3>5+</h3><p>Years Experience</p></div>
+<div class="card"><h3>750+</h3><p>Commands</p></div>
+<div class="card"><h3>20+</h3><p>Projects</p></div>
+<div class="card"><h3>24/7</h3><p>Learning</p></div>
+</div>
+</section>
+
+<section id="skills" class="panel reveal">
+<h2>Skills</h2>
+<div class="grid4">
+<div class="card">HTML5</div><div class="card">CSS3</div>
+<div class="card">JavaScript</div><div class="card">React</div>
+<div class="card">Next.js</div><div class="card">Node.js</div>
+<div class="card">Python</div><div class="card">MongoDB</div>
+</div>
+</section>
+
+<section id="projects" class="panel reveal">
+<h2>Featured Project</h2>
+<div class="card">Discord Selfbot • 750+ Commands</div>
+</section>
+
+<script>
+const ob=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('show')}));
+document.querySelectorAll('.reveal').forEach(x=>ob.observe(x));
+</script>
+</body></html>
