@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sefonx – Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ─── NAV ─────────────────────────────────────────────── -->
+<nav id="navbar">
+  <div class="nav-logo"><span class="red">Se</span>fonx</div>
+  <ul class="nav-links">
+    <li><a href="#home"       class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  </div>
+</nav>
+
+<!-- ─── HERO ─────────────────────────────────────────────── -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="greeting">Hello, I'm</p>
+    <h1><span class="white">Se</span><span class="red">fonx</span></h1>
+    <h2><span class="red">Full Stack</span> Developer</h2>
+    <p class="typewriter" id="typewriter">Building scalable web applications</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-red">View My Work →</a>
+      <a href="assets/cv.pdf" download class="btn-outline">Download CV ↓</a>
+    </div>
+    <div class="social-bar">
+      <a href="https://github.com"    target="_blank" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      </a>
+      <a href="https://discord.com"  target="_blank" aria-label="Discord">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03z"/></svg>
+      </a>
+      <a href="https://codepen.io"   target="_blank" aria-label="CodePen">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.608v6.784l-10 6.608-10-6.608V8.608L12 2l10 6.608zm-10 .895L7.596 12 12 14.497 16.404 12 12 9.503zm-8.5 2.26v2.474L5.404 12 3.5 10.763zM6.404 13L5 13.874l6.5 4.3v-2.575L6.404 13zm5.096 4.174l6.5-4.3-1.404-.874L11.5 15.599v2.575zm7-6.41L16.596 12 18.5 13.237v-2.474zM6.404 11L11.5 7.827V5.252l-6.5 4.3L6.404 11zm6.096-3.173V5.252l-6.5 4.3L7.404 11 12.5 7.827z"/></svg>
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="avatar-ring">
+      <img src="assets/profile.jpg" alt="Sefonx profile" class="avatar-img" />
+    </div>
+    <div class="hero-badges">
+      <div class="badge"><span class="badge-val">18</span><span class="badge-lbl">Age</span></div>
+      <div class="badge"><span class="badge-val">5+</span><span class="badge-lbl">Years Exp.</span></div>
+      <div class="badge"><span class="badge-val red">🇸🇦</span><span class="badge-lbl">Saudi Arabia</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── STATS BAR ─────────────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="stat"><span class="stat-icon">🚀</span><div><span class="stat-val">20+</span><span class="stat-lbl">Projects Completed</span></div></div>
+  <div class="stat"><span class="stat-icon code-icon">&lt;/&gt;</span><div><span class="stat-val">5+</span><span class="stat-lbl">Years Experience</span></div></div>
+  <div class="stat"><span class="stat-icon">⭐</span><div><span class="stat-val">750+</span><span class="stat-lbl">Selfbot Commands</span></div></div>
+  <div class="stat"><span class="stat-icon">☕</span><div><span class="stat-val">100%</span><span class="stat-lbl">Dedication</span></div></div>
+</div>
+
+<!-- ─── ABOUT ─────────────────────────────────────────────── -->
+<section id="about" class="section about-section">
+  <div class="about-grid">
+    <div>
+      <p class="sec-tag">About Me</p>
+      <h2 class="sec-title">Who Am I?</h2>
+      <p class="about-body">I'm <strong>Sefonx</strong>, a passionate Full Stack Developer from Saudi Arabia. I build modern, scalable, and high-performance web applications with clean code and the best practices.</p>
+      <p class="about-quote">I love turning ideas into real-world solutions.</p>
+      <div class="info-table">
+        <div class="info-row"><span class="info-icon">👤</span><span class="info-key">Age</span><span class="info-val">18 Years Old</span></div>
+        <div class="info-row"><span class="info-icon">⚡</span><span class="info-key">Experience</span><span class="info-val">5+ Years</span></div>
+        <div class="info-row"><span class="info-icon">📍</span><span class="info-key">Location</span><span class="info-val">Saudi Arabia</span></div>
+        <div class="info-row"><span class="info-icon">✉️</span><span class="info-key">Email</span><span class="info-val">blalfrhan600@gmail.com</span></div>
+      </div>
+      <a href="#contact" class="btn-ghost">👤 More About Me ↗</a>
+    </div>
+    <div class="globe-wrap">
+      <div class="globe">🌍</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SKILLS ─────────────────────────────────────────────── -->
+<section id="skills" class="section skills-section">
+  <p class="sec-tag center">My Skills</p>
+  <h2 class="sec-title center">My Technical Skills</h2>
+  <div class="skill-tabs">
+    <button class="tab active" data-tab="frontend">🖥 Frontend</button>
+    <button class="tab"        data-tab="backend">⚙ Backend</button>
+  </div>
+
+  <!-- Frontend -->
+  <div class="skills-grid" id="tab-frontend">
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"       alt="HTML5" />
+      <span>HTML5</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"         alt="CSS3" />
+      <span>CSS3</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+      <span>JavaScript</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"       alt="React" />
+      <span>React</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"     alt="Next.js" />
+      <span>Next.js</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind" />
+      <span>Tailwind CSS</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+      <span>TypeScript</span>
+    </div>
+  </div>
+
+  <!-- Backend -->
+  <div class="skills-grid hidden" id="tab-backend">
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"    alt="Node.js" />
+      <span>Node.js</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"  alt="Express" style="filter:invert(1)" />
+      <span>Express.js</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"  alt="MongoDB" />
+      <span>MongoDB</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+      <span>PostgreSQL</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"    alt="Python" />
+      <span>Python</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"    alt="Docker" />
+      <span>Docker</span>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"          alt="Git" />
+      <span>Git</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROJECTS ──────────────────────────────────────────── -->
+<section id="projects" class="section">
+  <div class="projects-header">
+    <div>
+      <p class="sec-tag">Featured Projects</p>
+      <h2 class="sec-title">My Recent Works</h2>
+    </div>
+    <a href="https://github.com" target="_blank" class="btn-ghost small">🔗 View All Projects</a>
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card featured">
+      <div class="proj-img discord">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" />
+      </div>
+      <div class="proj-body">
+        <div class="proj-header">
+          <span class="proj-name">Selfbot (Discord)</span>
+          <a href="#" class="proj-arrow">↗</a>
+        </div>
+        <p class="proj-sub red">750+ Commands</p>
+        <p class="proj-desc">Advanced Discord selfbot with 750+ commands including automation, moderation, fun, utilities, and advanced features.</p>
+        <div class="proj-tags">
+          <span class="tag">Node.js</span><span class="tag">Discord.js</span><span class="tag">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-img ecom">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="" />
+      </div>
+      <div class="proj-body">
+        <div class="proj-header">
+          <span class="proj-name">E-Commerce Website</span>
+          <a href="#" class="proj-arrow">↗</a>
+        </div>
+        <p class="proj-sub muted">Full-Stack Platform</p>
+        <p class="proj-desc">Full-stack e-commerce platform with modern UI and secure payment integration.</p>
+        <div class="proj-tags">
+          <span class="tag">Next.js</span><span class="tag">MongoDB</span><span class="tag">Tailwind</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-img port">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" />
+      </div>
+      <div class="proj-body">
+        <div class="proj-header">
+          <span class="proj-name">Portfolio Website</span>
+          <a href="#" class="proj-arrow">↗</a>
+        </div>
+        <p class="proj-sub muted">Personal Portfolio</p>
+        <p class="proj-desc">Modern & responsive portfolio website with smooth animations and premium design.</p>
+        <div class="proj-tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-img dash">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" />
+      </div>
+      <div class="proj-body">
+        <div class="proj-header">
+          <span class="proj-name">Dashboard App</span>
+          <a href="#" class="proj-arrow">↗</a>
+        </div>
+        <p class="proj-sub muted">Admin Dashboard</p>
+        <p class="proj-desc">Admin dashboard with analytics, charts, and user management system.</p>
+        <div class="proj-tags">
+          <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Chart.js</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── CONTACT ───────────────────────────────────────────── -->
+<section id="contact" class="section contact-section">
+  <p class="sec-tag center">Get In Touch</p>
+  <h2 class="sec-title center">Contact Me</h2>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item">
+        <span class="c-icon">✉️</span>
+        <div><p class="c-label">Email</p><p class="c-val">blalfrhan600@gmail.com</p></div>
+      </div>
+      <div class="contact-item">
+        <span class="c-icon">📍</span>
+        <div><p class="c-label">Location</p><p class="c-val">Saudi Arabia</p></div>
+      </div>
+      <div class="contact-item">
+        <span class="c-icon">💬</span>
+        <div><p class="c-label">Discord</p><p class="c-val">Sefonx#0000</p></div>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="return false">
+      <input  type="text"  placeholder="Your Name"    required />
+      <input  type="email" placeholder="Your Email"   required />
+      <textarea rows="5"   placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-red full">Send Message →</button>
+    </form>
+  </div>
+</section>
+
+<!-- ─── FOOTER ────────────────────────────────────────────── -->
+<footer>
+  <span>© 2025 <span class="red">Sefonx</span>. All rights reserved.</span>
+  <span>Built with ❤️ by Sefonx</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
