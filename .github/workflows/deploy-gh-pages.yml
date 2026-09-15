@@ -1,0 +1,63 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # BASE_PATH must match your repo name for a project page
+      # (https://<user>.github.io/<repo>/). Leave it empty ("") if this
+      # repo is deployed as a user/organization page instead.
+      - name: Build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/
+          # GitHub Pages is a static host with no server, so this
+          # contact form can only work here if it points at a
+          # separately-hosted API (e.g. this same project deployed on
+          # Vercel). Set CONTACT_API_URL as a repo variable
+          # (Settings > Secrets and variables > Actions > Variables)
+          # to your Vercel deployment's /api/contact URL.
+          VITE_CONTACT_API_URL: ${{ vars.CONTACT_API_URL }}
+        run: pnpm run build
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
